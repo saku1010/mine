@@ -1,0 +1,27 @@
+$main-color:#000000;
+$accent-color:#ffffff;
+$base-color:#DDDDDD;
+$dark-color: rgba(0, 0, 0, 0.3);
+
+@mixin center(){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@mixin width1200() {
+  width: 1200px;
+  margin: 0 auto;
+}
+@mixin row(){
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+// 引数
+@mixin center-height($height){
+  height:$height;
+  line-height: $height;
+  text-align: center;
+}

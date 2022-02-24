@@ -1,0 +1,762 @@
+@charset "UTF-8";
+/*---------------------
+全体構造
+----------------------*/
+body {
+  background-color: #DDDDDD;
+  background-image: url(../imegs/p_new0531_m_new05313.png);
+  color: #000000;
+  font-size: 16px;
+  font-family: 'Yuji Syuku', serif,'Comfortaa','ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+a {
+  color: #ffffff;
+}
+
+/*---------------------
+ヘッター
+----------------------*/
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header li a {
+  display: block;
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+          writing-mode: vertical-rl;
+  text-decoration: none;
+  padding-right: 24px;
+  letter-spacing: 10px;
+}
+
+header .inner {
+  text-align: center;
+}
+
+header p {
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/*---------------------
+メイン
+----------------------*/
+/*---------------------
+フッター
+----------------------*/
+footer {
+  height: 225px;
+  background-color: #235433;
+  color: #fff;
+}
+
+footer .seto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 595px;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+
+footer .seto address {
+  line-height: 35px;
+}
+
+footer .seto address i {
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+/*---------------------
+index heter
+----------------------*/
+#home header {
+  height: 100vh;
+  margin-bottom: 200px;
+}
+
+#home header .bx-wrapper {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  left: 0;
+  background-color: transparent;
+  margin: 0 auto;
+  position: absolute;
+  z-index: -1;
+}
+
+#home header .bxslider {
+  width: 100%;
+}
+
+#home header .bxslider img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#home header h1 {
+  color: #ffffff;
+  width: 1200px;
+  margin: 0 auto;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+#home header nav {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 1200px;
+  margin: 0 auto 130px auto;
+}
+
+#home header .inner {
+  padding-top: 250px;
+}
+
+#home header .inner i {
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+/*---------------------
+トップへ戻るボタン
+----------------------*/
+.back-top {
+  width: 90px;
+  height: 90px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  background: #235433;
+  opacity: 0.6;
+  border-radius: 50%;
+}
+
+.back-top a {
+  display: block;
+  padding-top: 35px;
+  padding-left: 3px;
+  text-decoration: none;
+}
+
+/*---------------------
+index main
+----------------------*/
+main {
+  margin-bottom: 200px;
+}
+
+main h2 {
+  font-size: 20px;
+}
+
+main .bun1 {
+  width: 1200px;
+  margin: 0 auto;
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+          writing-mode: vertical-rl;
+  width: 650px;
+  margin-bottom: 70px;
+}
+
+main .bun1 span {
+  text-combine-upright: all;
+}
+
+main .bun1 h2 {
+  margin-left: 50px;
+}
+
+main .bun1 p {
+  height: 430px;
+  line-height: 30px;
+  padding-top: 10px;
+}
+
+main .big-bg2 {
+  background-size: cover;
+  background-position: center top;
+  margin-bottom: 200px;
+}
+
+main #home2 {
+  background-image: url(../imegs/clear-bg-IMG_8550.png);
+  min-height: 760px;
+}
+
+main .bun2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 100px 200px 100px;
+}
+
+main .bun2 h2 {
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+          writing-mode: vertical-rl;
+  background-image: url(../imegs/sikaku.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width: 145px;
+  height: 500px;
+  margin-top: 150px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .bun2 img {
+  padding-top: 60px;
+}
+
+main .bun3 {
+  background-size: cover;
+  background-position: center top;
+  margin-bottom: 200px;
+}
+
+main #home3 {
+  background-image: url(../imegs/AdobeStock_370934407.jpg);
+  min-height: 500px;
+}
+
+main .bun3 {
+  height: 500px;
+}
+
+main .bun3 .susi {
+  overflow: hidden;
+  width: 1200px;
+  margin: 0 auto;
+  text-align: right;
+  color: #ffffff;
+}
+
+main .bun3 .susi h2 {
+  font-size: 40px;
+  border-bottom: 1px dotted #ffffff;
+  margin-bottom: 10px;
+  margin-top: 55px;
+  width: 400px;
+  text-align: left;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+main .bun3 .susi i {
+  margin-left: 15px;
+}
+
+main .bun3 .susi p {
+  line-height: 25px;
+}
+
+/*---------------------
+menu heter
+----------------------*/
+#menu header {
+  background-image: url(../imegs/AdobeStock_128561563.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+#menu header .midori {
+  width: 1200px;
+  margin: 0 auto;
+  height: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 50px;
+}
+
+#menu header .midori ul {
+  margin-left: 315px;
+}
+
+#menu header .midori .inner i {
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+/*---------------------
+memu main
+----------------------*/
+#menu main {
+  margin: 0 auto 200px auto;
+}
+
+#menu main .taisyou {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 100px 0;
+}
+
+#menu main .taisyou .osusume {
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 auto 200px auto;
+}
+
+#menu main .taisyou .osusume h2 {
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+          writing-mode: vertical-rl;
+  font-size: 50px;
+  margin-left: 90px;
+}
+
+#menu main .taisyou .cosu {
+  text-align: center;
+  width: 1400px;
+  margin: 0 auto 200px auto;
+}
+
+#menu main .taisyou .cosu h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+#menu main .taisyou .cosu p {
+  margin-bottom: 60px;
+}
+
+#menu main .h2 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 50px;
+}
+
+#menu main .aramenu {
+  margin: 160px auto;
+  text-align: center;
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+  line-height: 24px;
+}
+
+#menu main .aramenu .enn {
+  margin-bottom: 40px;
+}
+
+#menu main .aramenu .enn h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+#menu main .arakaruto {
+  width: 1400px;
+  margin: -100px auto 150px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+#menu main .arakaruto .img-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+#menu main .arakaruto .img-wrap:before {
+  -webkit-animation: img-wrap 2s cubic-bezier(0.4, 0, 0.2, 0) forwards;
+          animation: img-wrap 2s cubic-bezier(0.4, 0, 0.2, 0) forwards;
+  background: #DDDDDD;
+  bottom: 0;
+  content: '';
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+@-webkit-keyframes img-wrap {
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes img-wrap {
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+#menu main .uni {
+  margin-left: 200px;
+  width: 1400px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#menu main .uni .img-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+#menu main .uni .img-wrap:before {
+  -webkit-animation: img-wrap 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+          animation: img-wrap 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  background: #DDDDDD;
+  bottom: 0;
+  content: '';
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+@keyframes img-wrap {
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+/*---------------------
+info hetaer
+----------------------*/
+#info header {
+  background-image: url(../imegs/AdobeStock_402385532.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+#info header .midori {
+  width: 1200px;
+  margin: 0 auto;
+  height: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 50px;
+}
+
+#info header .midori ul {
+  margin-left: 315px;
+  margin-right: 0;
+}
+
+/*---------------------
+info main
+----------------------*/
+#info main {
+  width: 1200px;
+  margin: 100px auto;
+}
+
+#info main .omise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 1200px;
+  margin: 100px auto;
+  padding: 0 100px;
+}
+
+#info main .omise img {
+  width: 400px;
+}
+
+#info main .omise .jyouhou li {
+  padding-bottom: 5px;
+  border-bottom: 1px dotted #000000;
+}
+
+#info main .omise .jyouhou p {
+  padding-bottom: 20px;
+  border-bottom: 1px dotted #000000;
+}
+
+#info main .omise .jyouhou h3 {
+  margin-bottom: 50px;
+}
+
+#info main .omise .jyouhou h3 span {
+  font-size: 40px;
+}
+
+#info main .omise .jyouhou ul {
+  list-style-type: none;
+  line-height: 45px;
+  margin-bottom: 20px;
+}
+
+#info main .map {
+  width: 1200px;
+  text-align: center;
+}
+
+#info main .map iframe {
+  width: 1000px;
+  height: 600px;
+}
+
+/*---------------------
+予約　heter
+----------------------*/
+#reserve header {
+  background-image: url(../imegs/AdobeStock_326912102.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+#reserve header .midori {
+  width: 1200px;
+  margin: 0 auto;
+  height: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 50px;
+}
+
+#reserve header .midori ul {
+  margin-left: 315px;
+  margin-right: 0;
+}
+
+/*---------------------
+予約　main
+----------------------*/
+.main-page {
+  width: 1200px;
+  margin: 100px auto;
+  padding: 50px;
+}
+
+.main-page h2 {
+  font-size: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.main-page .fo-mu {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.main-page .come {
+  width: 1000px;
+  text-align: center;
+  margin: 0 auto 50px auto;
+  background-color: #FBF3E7;
+  padding: 40px;
+}
+
+.main-page .come .come2 {
+  text-align: left;
+  margin: 0 auto;
+  width: 400px;
+  line-height: 1.5;
+}
+
+.main-page .come .come2 i {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.main-page .otoiawase {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 25px 0 50px 10px;
+}
+
+.main-page .otoiawase .purai {
+  background-color: #FBF3E7;
+  padding: 25px 0;
+  border: none;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.main-page .otoiawase .purai input[type=checkbox] {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  margin: 0 -100px 0 0;
+}
+
+.main-page .otoiawase .last {
+  padding-left: 70px;
+  margin-bottom: 0px;
+}
+
+.main-page .otoiawase .last .bikou {
+  font-size: 20px;
+  display: inline-block;
+  position: relative;
+  top: -130px;
+}
+
+.main-page .otoiawase .last textarea {
+  margin-left: 190px;
+  width: 400px;
+  height: 150px;
+}
+
+.main-page .otoiawase .doui .susumu {
+  text-align: center;
+  border: none;
+}
+
+.main-page .otoiawase .doui .susumu input {
+  width: 350px;
+  height: 60px;
+  color: #ffffff;
+  background-color: #235433;
+  border-radius: 15px;
+}
+
+.main-page .otoiawase .cyuui {
+  text-align: left;
+  width: 580px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.main-page .otoiawase .cyuui p {
+  border: none;
+}
+
+.main-page .otoiawase p {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 25px;
+}
+
+.main-page .otoiawase p input {
+  width: 300px;
+}
+
+.main-page .otoiawase p .hissu {
+  background-color: #235433;
+  border-radius: 15px;
+  padding: 0 5px;
+  color: #fff;
+  margin-right: 25px;
+}
+
+.main-page .otoiawase p .text {
+  display: inline-block;
+  width: 230px;
+  font-size: 20px;
+}
+
+.main-page .otoiawase p .text2 {
+  display: inline-block;
+  width: 230px;
+  font-size: 20px;
+}
+
+.main-page .otoiawase p input[type="number"] {
+  width: 50px;
+}
+/*# sourceMappingURL=style.css.map */

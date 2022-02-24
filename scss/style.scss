@@ -1,0 +1,634 @@
+@import'settings.scss';
+/*---------------------
+全体構造
+----------------------*/ 
+body{
+  background-color:$base-color;
+  background-image: url(../imegs/p_new0531_m_new05313.png);
+  color: $main-color;
+  font-size: 16px;
+  font-family: 'Yuji Syuku', serif,'Comfortaa','ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+a{color: $accent-color;
+}
+/*---------------------
+ヘッター
+----------------------*/ 
+// 背景画像をいっぱいにする
+header{
+  ul{
+    @include row;
+justify-content: flex-end;
+// margin-right:  200px;
+// margin-bottom: 115px;
+  }
+  li a{
+    display: block;
+    // 縦書き
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    text-decoration: none;
+    padding-right: 24px;
+//  縦書き行間
+    letter-spacing: 10px;
+  }
+  .inner{
+    text-align: center;
+   }
+   p{
+     margin-bottom: 30px;
+     color: #ffffff;
+     font-size: 20px;
+
+   }
+  }
+/*---------------------
+メイン
+----------------------*/ 
+
+
+/*---------------------
+フッター
+----------------------*/ 
+footer{
+height: 225px;
+  background-color: #235433;
+  color: #fff;
+  .seto{
+    @include row;
+    width: 595px;
+    margin: 0 auto;
+    padding-top: 25px;
+    address{
+      line-height: 35px;
+  i{
+    font-size: 30px;
+    padding-left: 10px;
+
+}
+    }
+  }
+}
+/*---------------------
+index heter
+----------------------*/ 
+
+#home{
+  header{
+    height: 100vh;
+    margin-bottom: 200px;
+    .bx-wrapper {
+      box-shadow: none;
+      border: none;
+      left: 0;
+      background-color: transparent;
+      margin: 0 auto;
+      // logo重ねる
+      position: absolute;
+      z-index: -1;
+     }
+    .bxslider{
+      width: 100%;
+      img{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+      }
+    }
+    h1{
+      color: #ffffff;
+      width: 1200px;
+      margin: 0 auto;
+      position: absolute;
+      top: 30px;
+      left: 30px;
+
+     
+    }
+    nav{
+
+      position: absolute;
+      top: 50px;
+      right: 0;
+      width: 1200px;
+      margin: 0 auto 130px auto;
+  
+    } 
+    .inner{
+      padding-top: 250px;
+      i{
+      margin-right: 10px;
+      font-size: 30px;
+      }
+    }
+  
+  }
+}
+/*---------------------
+トップへ戻るボタン
+----------------------*/ 
+.back-top {
+  width: 90px;
+  height: 90px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  background: #235433;
+  opacity: 0.6;
+  border-radius: 50%;
+  a{
+    display: block;
+    padding-top: 35px;
+    padding-left: 3px;
+    text-decoration: none;
+  }
+ }
+/*---------------------
+index main
+----------------------*/ 
+main{
+  margin-bottom: 200px;
+  h2{
+    font-size: 20px 
+  }
+  .bun1 {
+    @include width1200;
+    // 縦書き
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    width: 650px;
+    margin-bottom: 70px;
+    span{
+      // 数字の縦書き
+      text-combine-upright: all;
+    }
+      h2{
+        margin-left: 50px;
+      }
+      p{
+        height: 430px;
+        line-height: 30px;
+        padding-top: 10px;
+      }
+  }
+  // 背景画像を大きくする
+  .big-bg2{
+    background-size: cover;
+    background-position: center top;
+    margin-bottom: 200px;
+  }
+  #home2{
+    background-image: url(../imegs/clear-bg-IMG_8550.png);
+    min-height: 760px;
+  }
+  .bun2{
+    @include row;
+    justify-content: center;
+    margin: 0 100px 200px 100px;
+    h2{
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+      background-image: url(../imegs/sikaku.png);
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      width: 145px;
+      height: 500px;
+      margin-top: 150px;
+      line-height: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    img{
+      padding-top: 60px;
+    }
+  }
+  .bun3{
+    background-size: cover;
+    background-position: center top;
+    margin-bottom: 200px;
+  }
+  #home3{
+    background-image: url(../imegs/AdobeStock_370934407.jpg);
+    min-height:500px;}
+  .bun3{
+    height: 500px;
+    .susi{
+      overflow: hidden;
+      width: 1200px;
+      margin: 0 auto;
+      text-align: right;
+      color: #ffffff;
+      h2{
+        font-size: 40px;
+        border-bottom: 1px dotted #ffffff;
+        margin-bottom: 10px;
+        margin-top: 55px;
+        width: 400px;
+        text-align: left;
+        padding-bottom: 10px;
+        display: inline-block;
+      }
+      i{
+        margin-left: 15px;
+      }
+      p{
+        line-height: 25px;
+      }
+
+    }
+  }
+}
+/*---------------------
+menu heter
+----------------------*/ 
+#menu {
+  header{
+    background-image: url(../imegs/AdobeStock_128561563.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+ 
+    .midori{
+      width: 1200px;
+      margin: 0 auto;
+      height: 320px;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+      padding-top: 50px;
+        ul{
+          margin-left: 315px;
+       }
+       .inner{
+  
+         i{
+
+           margin-right: 10px;
+           font-size: 30px;
+         
+         }
+       }
+    }
+  }
+}
+/*---------------------
+memu main
+----------------------*/
+#menu{
+  main{
+    margin: 0 auto 200px auto;
+      .taisyou{
+        background-color: #000000;
+        color: #ffffff;
+        padding: 100px 0;
+        .osusume{
+          width: 1200px;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          margin: 0 auto 200px auto;
+       
+          h2{
+          -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+          font-size: 50px;
+          margin-left: 90px;
+          }
+        }
+        .cosu{
+          text-align: center;
+          width: 1400px;
+          margin: 0 auto 200px auto;
+          h2{
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 30px;
+            }
+          p{
+         margin-bottom: 60px;
+         }
+        }
+      }
+     .h2{
+       width: 1200px;
+       margin: 0 auto;
+       text-align: center;
+       font-size: 50px;
+     }
+      .aramenu{
+        margin: 160px auto;
+        text-align: center;
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        line-height: 24px;
+        
+        .enn{
+          margin-bottom: 40px;
+          h3{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+          }
+        }
+      }
+      .arakaruto{
+        width: 1400px;
+        margin: -100px auto 150px auto;
+        display: flex;
+        overflow: hidden;
+
+// 画像を左からみぎへ-----------------------
+
+        .img-wrap {
+          overflow: hidden;
+          position: relative;
+        }
+        
+        .img-wrap:before {
+          animation: img-wrap 2s cubic-bezier(.4, 0, .2, 0) forwards;
+          background: #DDDDDD;
+          bottom: 0;
+          content: '';
+          left: 0;
+          pointer-events: none;
+          position: absolute;
+          right: 0;
+          top: 0;
+          z-index: 1;
+        }
+        
+        @keyframes img-wrap {
+          100% {
+            transform: translateX(100%);
+          }
+        }
+// -------------------------------------------
+      }
+
+    
+      .uni{
+        margin-left: 200px;
+        width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+
+// 画像を左からみぎへ-----------------------
+
+        .img-wrap {
+          overflow: hidden;
+          position: relative;
+        }
+        
+        .img-wrap:before {
+          animation: img-wrap 2s cubic-bezier(.4, 0, .2, 1) forwards;
+          background: #DDDDDD;
+          bottom: 0;
+          content: '';
+          left: 0;
+          pointer-events: none;
+          position: absolute;
+          right: 0;
+          top: 0;
+          z-index: 1;
+        }
+        
+        @keyframes img-wrap {
+          100% {
+            transform: translateX(100%);
+          }
+        }
+// -------------------------------------------
+      }
+  }
+}
+/*---------------------
+info hetaer
+----------------------*/
+#info {
+  header{
+    background-image: url(../imegs/AdobeStock_402385532.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    ;
+    .midori{
+      width: 1200px;
+      margin: 0 auto;
+      height: 320px;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+      padding-top: 50px;
+      ul{
+        margin-left: 315px;
+        margin-right: 0;
+      }
+    }
+  }
+}
+/*---------------------
+info main
+----------------------*/
+#info{
+
+  main{
+    width: 1200px;
+    margin: 100px auto;
+    .omise{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 1200px;
+      margin: 100px auto;
+      padding: 0 100px;
+   
+      img{
+        width: 400px;
+      }
+      .jyouhou{
+        li{
+          padding-bottom: 5px;
+          border-bottom: 1px dotted #000000;
+        }
+        p{
+          padding-bottom: 20px;
+          border-bottom: 1px dotted #000000;
+        }
+        h3{
+          margin-bottom: 50px;
+          span{
+            font-size: 40px;
+          }
+        }
+        ul{
+          list-style-type:none;
+          line-height: 45px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .map{
+      width: 1200px;
+
+text-align: center;
+    iframe{
+      width: 1000px;
+      height: 600px;
+      
+      
+    }
+  }
+  }
+}
+/*---------------------
+予約　heter
+----------------------*/
+#reserve {
+  header{
+    background-image: url(../imegs/AdobeStock_326912102.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    ;
+    .midori{
+      width: 1200px;
+      margin: 0 auto;
+      height: 320px;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+      padding-top: 50px;
+      ul{
+        margin-left: 315px;
+        margin-right: 0;
+      }
+    }
+  }
+}
+/*---------------------
+予約　main
+----------------------*/
+.main-page{
+  width: 1200px;
+  margin: 100px auto;
+  padding: 50px;
+  h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .fo-mu{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .come{
+    width: 1000px;
+    text-align: center;
+    margin:0 auto 50px auto;
+    background-color: #FBF3E7;
+
+    padding: 40px;
+      .come2{
+      
+        text-align: left;
+        margin: 0 auto;
+        width: 400px;
+        line-height: 1.5;
+        i{
+          margin-right: 10px;
+          font-size:20px;
+          color: #ffffff;
+        }
+      }
+  }
+  .otoiawase{
+     width: 1000px;
+     margin: 0 auto;
+     padding: 25px 0 50px 10px;
+     .purai{
+       background-color: #FBF3E7;
+       padding: 25px 0;
+       border: none;
+       margin-top: 50px;
+       margin-bottom: 50px;
+          input[type=checkbox] {
+          transform: scale(2);
+          margin: 0 -100px 0 0;
+      }
+     }
+     .last{
+       padding-left: 70px;
+       margin-bottom: 0px;
+      
+       .bikou{
+        font-size: 20px;
+         display: inline-block;
+        //  備考を上に
+         position: relative;
+         top: -130px;
+       }
+       textarea{
+         margin-left: 190px;
+         width: 400px;
+         height: 150px;
+       }
+     }
+     .doui{
+       .susumu{
+         text-align: center;
+         border: none;
+         input{
+           width: 350px;
+           height: 60px;
+           color:#ffffff;
+           background-color: #235433;
+           border-radius: 15px;
+         }
+       }
+     }
+     .cyuui{
+       text-align: left;
+       width: 580px;
+       margin: 0 auto;
+       line-height: 1.5;
+       p{
+         border: none;
+       }
+     }
+     p{
+      input{
+      
+        width: 300px;
+      }
+       margin-bottom: 25px;
+       border-bottom: 1px solid #000000;
+       padding-bottom: 25px;
+       .hissu{
+         background-color: #235433;
+         border-radius: 15px;
+         padding: 0 5px;
+         color: #fff;
+         margin-right: 25px;
+       }
+       .text{
+         display: inline-block;
+         width: 230px;
+         font-size: 20px;
+       }
+       .text2{
+        display: inline-block;
+        width: 230px;
+        font-size: 20px;
+      }
+      input[type="number"]
+      {
+        width: 50px;
+      }
+     }
+  }
+
+}
