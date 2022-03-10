@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>那覇・和食の和晩酌-嶺- – 那覇で和食の接待・個室なら和晩酌-嶺-</title>
   <link rel="stylesheet" href="css/reset.css">
+
   <link rel="stylesheet" href="css/hover.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,10 +15,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Comfortaa:wght@400;600&family=Source+Sans+3:wght@200&family=Train+One&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/hamburger-menu.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/smooth-scroll.js"></script>
   <script src="https://kit.fontawesome.com/42915c3610.js" crossorigin="anonymous"></script>
+  <script src="js/hamburger-menu.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script>
     $(function () {
@@ -41,12 +45,24 @@
           <div><img src="imegs/images-main-image3.png" alt="外観"></div>
         </div>
         <h1>那覇で和食の接待・個室なら和晩酌 -嶺-</h1>
-        <nav>
+        <!-- pc用ナビゲーション -->
+        <nav class="pc-nav">
           <ul>
             <li class="hvr-bob"><a href="index.html">トップ</a></li>
             <li class="hvr-bob"><a href="menu.html">メニュー</a></li>
             <li class="hvr-bob"><a href="reserve.html">ご予約</a></li>
             <li class="hvr-bob"><a href="info.html">店舗情報</a></li>
+          </ul>
+        </nav>
+        <!-- ハンバーガーメニュー -->
+        <button class="hamburger-button"></button>
+        <!-- ナビゲーション -->
+        <nav class="hamburger-nav">
+          <ul>
+            <li><a href="index.html">トップ</a></li>
+            <li><a href="menu.html">メニュー</a></li>
+            <li><a href="reserve.html">ご予約</a></li>
+            <li><a href="info.html">店舗情報</a></li>
           </ul>
         </nav>
         <div class="inner">

@@ -13,8 +13,12 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Comfortaa:wght@400;600&family=Source+Sans+3:wght@200&family=Train+One&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/hamburger-menu.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/42915c3610.js" crossorigin="anonymous"></script>
+  <script src="js/hamburger-menu.js"></script>
   <script src="js/scrollreveal.min.js"></script>
 </head>
 
@@ -22,12 +26,24 @@
   <div class="page">
     <header>
       <div class="midori">
-        <nav>
+        <!-- pc用ナビゲーション -->
+        <nav class="pc-nav">
           <ul>
             <li class="hvr-bob"><a href="index.html">トップ</a></li>
             <li class="hvr-bob"><a href="menu.html">メニュー</a></li>
             <li class="hvr-bob"><a href="reserve.html">ご予約</a></li>
             <li class="hvr-bob"><a href="info.html">店舗情報</a></li>
+          </ul>
+        </nav>
+        <!-- ハンバーガーメニュー -->
+        <button class="hamburger-button"></button>
+        <!-- ナビゲーション -->
+        <nav class="hamburger-nav">
+          <ul>
+            <li><a href="index.html">トップ</a></li>
+            <li><a href="menu.html">メニュー</a></li>
+            <li><a href="reserve.html">ご予約</a></li>
+            <li><a href="info.html">店舗情報</a></li>
           </ul>
         </nav>
         <div class="inner">

@@ -1,0 +1,245 @@
+@media screen and (max-width:480px) {
+  /* -------------------
+  全体構造
+  -------------------- */
+  /* 幅の調整 */
+ 
+  /* #home header {
+    height: 600px;
+  } */
+  
+  footer .seto {
+    width: auto;
+  }
+  footer .seto img {
+    width: 200px;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  img{
+    max-width: 100%;
+    height: 300px;
+  }
+  .inner img{
+    width: 200px;
+    height: auto;
+  }
+  #home header .bxslider {
+    width: auto;
+  }
+  #home header h1 {
+    width: auto;
+  }
+  #home header nav {
+  margin: 0;
+  }
+  main .bun1 {
+    width: auto;
+    writing-mode:horizontal-tb;
+  }
+  main .bun2 h2 {
+    width: auto;
+  }
+  main .bun3 .susi {
+    width: auto;
+  }
+  main .bun3 .susi h2 {
+    width: auto;
+  }
+  #menu header .midori {
+    width: auto;
+  }
+  #menu main .taisyou .osusume {
+    width:auto;
+  }
+  #menu main .taisyou .cosu {
+    width: auto;
+  }
+  #menu main .h2 {
+    width:auto;
+  }
+  #menu main .aramenu {
+    width: auto; 
+  }
+  #menu main .arakaruto {
+    width: auto;
+  }
+  #menu main .uni {
+    width: auto;
+  }
+  #info header .midori {
+    width: auto;
+  }
+  #info main {
+    width:auto;
+  }
+  #info main .omise {
+    width: auto;
+  }
+  #info main .omise img {
+    width:auto;
+  }
+  #info main .map {
+    width: auto;
+  }
+  #info main .map iframe {
+    width: auto;
+  }
+  #reserve header .midori {
+    width:auto;
+  }
+  .main-page {
+    width:auto;
+  }
+  .main-page .come {
+    width:auto;
+  }
+  .main-page .come .come2 {
+    width: auto;
+  }
+  .main-page .otoiawase {
+    width: auto;
+  }
+  .main-page .otoiawase .last textarea {
+    width: auto;
+  }
+  .main-page .otoiawase .doui .susumu input {
+    width: auto;
+  }
+  .main-page .otoiawase .cyuui {
+    width: auto;
+  }
+  .main-page .otoiawase p input {
+    width: auto;
+  }
+  /* 必須の幅調整 */
+  /* .main-page .otoiawase p .text {
+    width: auto;
+  } */
+  .main-page .otoiawase p .text2 {
+    width: auto;
+  }
+  .main-page .otoiawase p input[type="number"] {
+    width:auto;
+  }
+   /* -------------------
+    ヘッター
+  --------------------*/
+  header {
+    border-radius: 0 ;
+  }
+  header .inner {
+    display: block;
+  }
+  /* ナビゲーションの非表示 */
+  header .pc-nav{
+    display: none;
+  }
+/* -------------------------- */
+ header nav {
+    margin: 0;
+    width: 500px;
+  } header .inner
+ {
+ margin: 0 100px;
+}
+ header{
+    margin-bottom: 100px;
+  }
+  /* ハンバーガーメニュー */
+  .hamburger-nav {
+    background-color: #000;
+  /* 高さの調節はここ */
+    height: 100vh;
+    position: fixed;
+    }
+  .hamburger-button{
+    background-color: #ffffff;
+    display: flex;
+    border-radius: 20%;
+  }
+  .hamburger-button path{
+    fill: #000;
+  }
+  .hamburger-nav ul{
+    position: sticky;
+    top: 100px;
+  }
+  .hamburger-nav li a{
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+  }
+  main .bun1{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  main .bun1 h2{
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+  main .big-bg2 {
+    margin-top: 330px;
+  }
+  main .bun2 img{
+    margin-top: 100px;
+  }
+  main .big-bg2 {
+    margin-bottom: 0;
+  }
+  footer .seto {
+    margin: 0 40px;
+  }
+  /* menu main */
+  #menu main .taisyou .osusume {
+    display: block;
+    margin-bottom: 50px;
+  }
+  #menu main .taisyou .osusume h2 {
+    writing-mode:horizontal-tb;
+    margin-top: 50px;
+  }
+  #menu main .taisyou .cosu h2 {
+    font-size: 30px;
+  }
+  #menu main .arakaruto .img-wrap {
+    margin:0 40px;
+  }
+  #menu main .aramenu {
+    margin:50px 20px;
+    width: auto;
+    display: block;
+  }
+  #menu main .uni .img-wrap {
+    margin: 0 40px;
+  }
+/* 予約ページ */
+.main-page h2 {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+.main-page .fo-mu {
+  text-align: left;
+}
+/* 備考 */
+.main-page .otoiawase .last textarea {
+  margin-left: 0;
+} 
+.main-page .otoiawase input{
+  margin: 20px 0;
+}
+.main-page .otoiawase .purai {
+  padding:40px;
+}
+.main-page .otoiawase .purai input[type=checkbox] {
+  margin: 0;
+}
+/* 店舗情報 */
+#info main .omise {
+  display: block;
+}
+#info main .omise img {
+  margin-bottom: 50px;
+}
+  }

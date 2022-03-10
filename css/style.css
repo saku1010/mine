@@ -45,13 +45,17 @@ header li a {
 header .inner {
   text-align: center;
 }
-
 header p {
   margin-bottom: 30px;
   color: #ffffff;
   font-size: 20px;
 }
-
+.hamburger-button{
+  display: none;
+}
+/* .hamburger-nav {
+  background-color: red;
+  } */
 /*---------------------
 メイン
 ----------------------*/
@@ -78,16 +82,13 @@ footer .seto {
   margin: 0 auto;
   padding-top: 25px;
 }
-
 footer .seto address {
   line-height: 35px;
 }
-
 footer .seto address i {
   font-size: 30px;
   padding-left: 10px;
 }
-
 /*---------------------
 index heter
 ----------------------*/
@@ -95,7 +96,6 @@ index heter
   height: 100vh;
   margin-bottom: 200px;
 }
-
 #home header .bx-wrapper {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -106,18 +106,15 @@ index heter
   position: absolute;
   z-index: -1;
 }
-
 #home header .bxslider {
   width: 100%;
 }
-
 #home header .bxslider img {
   width: 100%;
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 #home header h1 {
   color: #ffffff;
   width: 1200px;
@@ -126,24 +123,22 @@ index heter
   top: 30px;
   left: 30px;
 }
-
-#home header nav {
+/* navを㍶-navへ変更しました3/4*/
+#home header .pc-nav {
   position: absolute;
   top: 50px;
   right: 0;
   width: 1200px;
   margin: 0 auto 130px auto;
-}
 
+}
 #home header .inner {
-  padding-top: 250px;
+  padding-top: 200px;
 }
-
 #home header .inner i {
   margin-right: 10px;
   font-size: 30px;
 }
-
 /*---------------------
 トップへ戻るボタン
 ----------------------*/
@@ -157,25 +152,21 @@ index heter
   opacity: 0.6;
   border-radius: 50%;
 }
-
 .back-top a {
   display: block;
   padding-top: 35px;
   padding-left: 3px;
   text-decoration: none;
 }
-
 /*---------------------
 index main
 ----------------------*/
 main {
   margin-bottom: 200px;
 }
-
 main h2 {
   font-size: 20px;
 }
-
 main .bun1 {
   width: 1200px;
   margin: 0 auto;
@@ -185,21 +176,17 @@ main .bun1 {
   width: 650px;
   margin-bottom: 70px;
 }
-
 main .bun1 span {
   text-combine-upright: all;
 }
-
 main .bun1 h2 {
   margin-left: 50px;
 }
-
 main .bun1 p {
   height: 430px;
   line-height: 30px;
   padding-top: 10px;
 }
-
 main .big-bg2 {
   background-size: cover;
   background-position: center top;
@@ -444,6 +431,7 @@ memu main
   right: 0;
   top: 0;
   z-index: 1;
+
 }
 
 @-webkit-keyframes img-wrap {
@@ -630,6 +618,7 @@ info main
   width: 1200px;
   margin: 100px auto;
   padding: 50px;
+
 }
 
 .main-page h2 {
@@ -661,13 +650,14 @@ info main
 .main-page .come .come2 i {
   margin-right: 10px;
   font-size: 20px;
-  color: #ffffff;
+  color: #000;
 }
 
 .main-page .otoiawase {
   width: 1000px;
   margin: 0 auto;
   padding: 25px 0 50px 10px;
+
 }
 
 .main-page .otoiawase .purai {
@@ -760,3 +750,6 @@ info main
   width: 50px;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+
