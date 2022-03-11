@@ -232,8 +232,14 @@
 .main-page .otoiawase .purai {
   padding:40px;
 }
+.main-page .otoiawase .purai span{
+  display: block;
+  margin-left: 30px;
+  margin-top: -20px;
+}
 .main-page .otoiawase .purai input[type=checkbox] {
   margin: 0;
+  vertical-align: middle;
 }
 /* 店舗情報 */
 #info main .omise {
